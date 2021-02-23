@@ -1,0 +1,8 @@
+<ul>
+  <%@artists.each do |artist|%>
+  <li>
+    <a href=<%="/artists/#{artist.id}"%>><%=artist.name%></a>
+    <span><%=artist.songs.count%> song</span>
+  </li>
+  <%end%>
+</ul>
